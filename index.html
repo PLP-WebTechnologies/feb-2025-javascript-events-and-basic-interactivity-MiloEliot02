@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form</title>
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Interactive Page</h1>
+    <p>Explore the gallery, tabs, and form below!</p>
+  </header>
+
+  <div id="gallery" class="card">
+    <img id="galleryImage" src="/unsplash3.jpg" alt="Gallery Image">
+    <div class="gallery-controls">
+      <button id="prevButton">Previous</button>
+      <button id="nextButton">Next</button>
+    </div>
+  </div>
+
+  <div class="tabs card">
+    <div class="tab-buttons">
+      <button class="tab-button" data-tab="tab1">Tab 1</button>
+      <button class="tab-button" data-tab="tab2">Tab 2</button>
+      <button class="tab-button" data-tab="tab3">Tab 3</button>
+    </div>
+    <div id="tab1" class="tab-content">Content for Tab 1</div>
+    <div id="tab2" class="tab-content" style="display: none;">Content for Tab 2</div>
+    <div id="tab3" class="tab-content" style="display: none;">Content for Tab 3</div>
+  </div>
+
+  <form id="myForm" class="card">
+    <h2>Contact Us</h2>
+    <div>
+      <label for="name">Name (required):</label>
+      <input type="text" id="name" name="name" required>
+      <p class="error-message" id="nameError"></p>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <p class="error-message" id="emailError"></p>
+    </div>
+    <div>
+      <label for="password">Password (min 8 chars):</label>
+      <input type="password" id="password" name="password">
+      <p class="error-message" id="passwordError"></p>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Interactive Page. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
